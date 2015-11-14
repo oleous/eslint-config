@@ -38,3 +38,15 @@ It's recommended to then run this in your test script e.g.
   "test": "npm run eslint && npm run jest",
 }
 ```
+
+## Releases
+
+If changes have been made to eslint-config, please increment the relevant version number.
+
+You'll also need to create a new release on GitHub with a matching version number.
+
+1. Incrementing the major version number should never be necessary.
+
+1. Increment the minor version number if new rules are added, or rules are changed that will break repositories using the existing configuration.
+
+1. Increment the patch number if a small change is made to a rule (e.g. because it was not configured correctly).
