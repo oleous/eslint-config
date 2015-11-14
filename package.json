@@ -20,7 +20,7 @@
     "configuration",
     "oleous"
   ],
-  "author": "oleous",
+  "author": "oleous <hello@oleous.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/oleous/eslint-config/issues"
