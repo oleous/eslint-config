@@ -1,0 +1,33 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "description": "Oleous ESLint Configuration",
+  "main": ".eslintrc",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oleous/eslint-config"
+  },
+  "keywords": [
+    "eslint",
+    "linting",
+    "react",
+    "es6",
+    "javascript",
+    "config",
+    "configuration",
+    "oleous"
+  ],
+  "author": "oleous",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/oleous/eslint-config/issues"
+  },
+  "homepage": "https://github.com/oleous/eslint-config",
+  "dependencies": {
+    "eslint": "=1.5.0",
+    "eslint-plugin-react": "=3.4.2"
+  }
+}
