@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/oleous/eslint-config",
   "dependencies": {
-    "eslint": "=1.5.0",
-    "eslint-plugin-react": "=3.4.2"
+    "eslint": "=1.9.0",
+    "eslint-plugin-react": "=3.8.0"
   }
 }
