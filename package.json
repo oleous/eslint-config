@@ -21,7 +21,7 @@
     "oleous"
   ],
   "author": "oleous",
-  "license": "BSD",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/oleous/eslint-config/issues"
   },
