@@ -1,11 +1,11 @@
 machine:
-	node:
-		version: 4.1.0
+    node:
+	    version: 4.1.0
 
 dependencies:
-	pre:
-		- npm install
+    pre:
+        - npm install
 
 test:
-	override:
-		- npm test
+    override:
+        - npm test
