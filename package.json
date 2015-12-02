@@ -4,7 +4,7 @@
   "description": "Oleous ESLint Configuration",
   "main": ".eslintrc",
   "scripts": {
-    "test": "eslint test-file.js"
+    "test": "eslint test-file.js && jsonlint -q .eslintrc  && echo 'All tests passed!'"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,9 @@
     "url": "https://github.com/oleous/eslint-config/issues"
   },
   "homepage": "https://github.com/oleous/eslint-config",
-  "dependencies": {
+  "devDependencies": {
     "eslint": "=1.9.0",
-    "eslint-plugin-react": "=3.8.0"
+    "eslint-plugin-react": "=3.8.0",
+    "jsonlint": "=1.6.2"
   }
 }

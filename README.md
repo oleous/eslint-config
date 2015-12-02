@@ -1,4 +1,4 @@
-# ESLint Configuration
+# ESLint Configuration [![Circle CI](https://circleci.com/gh/oleous/eslint-config.svg?style=svg)](https://circleci.com/gh/oleous/eslint-config)
 
 ## Install
 
