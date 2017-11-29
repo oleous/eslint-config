@@ -2,7 +2,7 @@
 
 **Oleous ESLint Configuration**
 
-[![CircleCI](https://circleci.com/gh/oleous/eslint-config/tree/master.svg?style=svg)](https://circleci.com/gh/oleous/eslint-config/tree/master)
+[![CircleCI](https://circleci.com/gh/oleous/eslint-config-oleous/tree/master.svg?style=svg)](https://circleci.com/gh/oleous/eslint-config-oleous/tree/master)
 
 ## Install
 
