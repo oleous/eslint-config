@@ -1,14 +1,16 @@
 {
-  "name": "eslint-config",
-  "version": "1.0.0",
+  "name": "eslint-config-oleous",
+  "version": "2.0.0",
   "description": "Oleous ESLint Configuration",
-  "main": ".eslintrc",
+  "main": ".eslintrc.json",
   "scripts": {
-    "test": "eslint test-file.js"
+    "eslint": "eslint test-file.js",
+    "jsonlint": "jsonlint .eslintrc.json -q",
+    "test": "npm run jsonlint && npm run eslint"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oleous/eslint-config"
+    "url": "https://github.com/oleous/eslint-config-oleous"
   },
   "keywords": [
     "eslint",
@@ -23,11 +25,18 @@
   "author": "oleous <hello@oleous.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oleous/eslint-config/issues"
+    "url": "https://github.com/oleous/eslint-config-oleous/issues"
   },
-  "homepage": "https://github.com/oleous/eslint-config",
+  "homepage": "https://github.com/oleous/eslint-config-oleous",
   "dependencies": {
-    "eslint": "=1.9.0",
-    "eslint-plugin-react": "=3.8.0"
+    "babel-eslint": "7.1.0",
+    "eslint": "3.19.0",
+    "eslint-plugin-react": "6.7.1"
+  },
+  "devDependencies": {
+    "jsonlint": "1.6.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.19.x <4.x.x"
   }
 }

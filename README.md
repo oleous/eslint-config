@@ -1,41 +1,62 @@
 # ESLint Configuration
 
+**Oleous ESLint Configuration**
+
+[![CircleCI](https://circleci.com/gh/oleous/eslint-config-oleous/tree/master.svg?style=svg)](https://circleci.com/gh/oleous/eslint-config-oleous/tree/master)
+
 ## Install
 
-If there's a suitable version of eslint-config, include the eslint-config in your package.json.
-Recommended to pin a specific version.
+Recommended to pin a specific version. Full list available [here](https://github.com/oleous/eslint-config-oleous/releases).
+
+```shell
+npm install oleous/eslint-config-oleous#x.x.x -DE
+```
+
+This will automatically add the following to your package.json.
 
 ```json
 "devDependencies": {
-  "eslint-config": "git://github.com/oleous/eslint-config.git#1.0.0",
+  "eslint-config-oleous": "oleous/eslint-config-oleous.git#x.x.x",
 }
 ```
 
-You'll also need to include eslint & any other plugins that are needed in your package.json.
-You can find out suitable versions from eslint-config's package.json.
+Make sure you have eslint installed in your project as this is a peer dependency of eslint-config-oleous.
 
 ```json
 "devDependencies": {
-  "eslint": "=1.5.1",
-  "eslint-plugin-react": "=3.5.0"
+  "eslint": "x.x.x"
+}
+```
+
+## Configure eslint
+
+Create a file called `.eslintrc.json` and put the following in it:
+
+```json
+{
+  "extends": [
+    "oleous"
+  ]
 }
 ```
 
 ## Running eslint
 
-Add a script like the following to your package.json (-c defines the config location).
+Add a script like the following to your package.json.
 
 ```json
 "scripts": {
-  "eslint": "eslint -c node_modules/eslint-config/.eslintrc 'src/js/'",
+  "lint": "eslint 'src/js/'",
 }
 ```
 
 It's recommended to then run this in your test script e.g.
 
 ```json
-"scripts": {
-  "test": "npm run eslint && npm run jest",
+{
+  "scripts": {
+    "test": "npm run lint && npm run tests",
+  }
 }
 ```
 
