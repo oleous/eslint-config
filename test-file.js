@@ -1,6 +1,7 @@
-import Something from 'somewhere';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-export default class Test extends Something {
+export default class Test extends React.Component {
   render() {
     return (
       <p className="lead">
@@ -9,3 +10,5 @@ export default class Test extends Something {
     );
   }
 }
+
+ReactDOM.render(<Test />, document.getElementById('test'));
